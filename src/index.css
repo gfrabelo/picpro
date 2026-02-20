@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #050507;
+  color: #ffffff;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(#4c1d95 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+.neon-glow:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.8);
+}
